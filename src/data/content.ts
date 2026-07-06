@@ -23,7 +23,7 @@ export const hero = {
 
 export const mission = {
   heading: "The Baltic has a visibility problem",
-  body: "Shadow-fleet tankers, spoofed identities, dual-use vessels loitering near cables and pipelines. AIS shows where a ship is — not who it really is. We compress hours of manual vessel investigation into a sourced intelligence dossier and threat score, in 30–90 seconds.",
+  body: "Shadow-fleet tankers, spoofed identities, dual-use vessels loitering near cables and pipelines. AIS shows where a ship is — not who it really is. We compress hours of manual vessel investigation into a sourced intelligence report and threat score, in 30–90 seconds.",
   sectors: ["Wind farms", "Ports", "Pipelines", "Subsea cables"],
 };
 
@@ -40,7 +40,7 @@ export const solutions = {
     {
       title: "Analyze",
       description:
-        "One click compiles a sourced dossier: identity, ownership, history, capabilities, sanctions — and a 0–100 threat score.",
+        "One click compiles a sourced vessel report: identity, ownership, history, capabilities, sanctions — and a 0–100 threat score.",
     },
     {
       title: "Decide",
@@ -57,9 +57,9 @@ export const trip = {
   tagline:
     "A tactical picture of the Baltic — live AIS tracking, OSINT vessel analysis and threat assessment in one operator workstation.",
   stats: [
-    { value: "30–90 s", label: "from AIS blip to intelligence dossier" },
+    { value: "30–90 s", label: "from AIS blip to full vessel report" },
     { value: "0–100", label: "threat score on every analyzed vessel" },
-    { value: "10", label: "sections per structured report" },
+    { value: "10", label: "sections of structured analysis" },
   ],
   features: [
     {
@@ -68,14 +68,14 @@ export const trip = {
         "Every vessel colored by threat. Lock your area, draw a corridor, or search any ship by name, MMSI, or IMO.",
     },
     {
-      title: "Sourced OSINT dossiers",
+      title: "Sourced OSINT reports",
       description:
         "Who owns it, where it's been, what it can do, whether it's sanctioned — every field cited to its source.",
     },
     {
       title: "Spoofing signals",
       description:
-        "Catch identity games: broadcast-vs-registry mismatches are flagged inline, right in the dossier.",
+        "Catch identity games: broadcast-vs-registry mismatches are flagged inline, right in the vessel's report.",
     },
     {
       title: "Command brief",
