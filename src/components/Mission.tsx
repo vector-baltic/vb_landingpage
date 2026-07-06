@@ -1,8 +1,15 @@
-import { Anchor, Cable, Ship, Wind } from "lucide-react";
+import { Anchor, Cable, Fuel, Shield, Wind, type LucideIcon } from "lucide-react";
 import Reveal from "./Reveal";
 import { mission } from "../data/content";
 
-const sectorIcons = [Wind, Anchor, Cable, Ship];
+// Keyed by sector name so reordering or extending mission.sectors in
+// content.ts can never mis-pair an icon; unknown sectors get the shield.
+const sectorIcons: Record<string, LucideIcon> = {
+  "Wind farms": Wind,
+  Ports: Anchor,
+  Pipelines: Fuel,
+  "Subsea cables": Cable,
+};
 
 export default function Mission() {
   return (
@@ -19,8 +26,8 @@ export default function Mission() {
         </Reveal>
 
         <Reveal delay={0.2} className="mt-12 flex flex-wrap items-center justify-center gap-4">
-          {mission.sectors.map((sector, i) => {
-            const Icon = sectorIcons[i % sectorIcons.length];
+          {mission.sectors.map((sector) => {
+            const Icon = sectorIcons[sector] ?? Shield;
             return (
               <span
                 key={sector}

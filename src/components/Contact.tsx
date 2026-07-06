@@ -21,7 +21,7 @@ export default function Contact() {
               className="group inline-flex items-center gap-3 rounded-md bg-primary px-10 py-4 text-lg font-medium text-primary-foreground shadow-cyan transition-all hover:shadow-cyan-strong"
             >
               <Mail className="h-5 w-5" />
-              Contact us
+              {contact.cta}
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
             </a>
             <a

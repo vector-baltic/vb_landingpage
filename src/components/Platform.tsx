@@ -8,7 +8,7 @@ export default function Platform() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,hsl(188_95%_43%_/_0.08)_0%,transparent_70%)]" />
       <div className="container relative">
         <Reveal>
-          <SectionHeading eyebrow="Platform" title={platform.heading} />
+          <SectionHeading eyebrow={platform.eyebrow} title={platform.heading} />
         </Reveal>
 
         <Reveal delay={0.1} className="mx-auto max-w-4xl text-center">

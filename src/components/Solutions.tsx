@@ -12,20 +12,22 @@ export default function Solutions() {
       <div className="container relative">
         <Reveal>
           <SectionHeading
-            eyebrow="Solutions"
-            title="What we do"
-            subtitle="Four capabilities, one goal: giving operators the time and clarity to act."
+            eyebrow={solutions.eyebrow}
+            title={solutions.heading}
+            subtitle={solutions.subheading}
           />
         </Reveal>
 
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
-          {solutions.map((solution, i) => {
-            const Icon = icons[i];
+          {solutions.items.map((solution, i) => {
+            // Modulo keeps a content.ts edit (5th item) from indexing past
+            // the icon list and white-screening the page.
+            const Icon = icons[i % icons.length];
             return (
               <Reveal key={solution.title} delay={i * 0.1}>
-                <div className="group relative h-full overflow-hidden rounded-xl border border-border bg-card p-8 transition-all duration-300 hover:border-primary/50 hover:shadow-cyan">
+                <div className="card-glow group relative h-full overflow-hidden p-8">
                   <span className="absolute right-6 top-6 font-mono text-sm text-muted-foreground/40">
-                    0{i + 1}
+                    {String(i + 1).padStart(2, "0")}
                   </span>
                   <Icon className="mb-6 h-12 w-12 text-primary transition-transform duration-300 group-hover:scale-110" />
                   <h3 className="mb-3 font-display text-xl font-semibold">{solution.title}</h3>
