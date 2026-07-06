@@ -18,7 +18,7 @@ export const hero = {
   description: "We detect hidden threats before they strike.",
   ctaPrimary: "See how it works",
   ctaSecondary: "Get in touch",
-  capabilities: ["Live vessel tracking", "Automated OSINT", "Threat assessment"],
+  capabilities: ["Automated OSINT analysis", "Anomaly & spoofing detection", "Threat scoring"],
 };
 
 export const mission = {
@@ -35,7 +35,7 @@ export const solutions = {
     {
       title: "Track",
       description:
-        "Live AIS across the Baltic on a tactical map — every vessel colored by threat, watching your whole area or a single route corridor.",
+        "A live map of every vessel in your area — where most tools stop, and where we start. Each contact is one click from a full investigation.",
     },
     {
       title: "Analyze",
@@ -55,7 +55,7 @@ export const product = {
   eyebrow: "The Console",
   heading: "A tactical picture of the Baltic",
   tagline:
-    "Live AIS tracking, OSINT vessel analysis and threat assessment — in one operator workstation.",
+    "OSINT vessel analysis, anomaly detection and threat scoring — layered over live AIS tracking.",
   stats: [
     { value: "30–90 s", label: "from AIS blip to full vessel report" },
     { value: "0–100", label: "threat score on every analyzed vessel" },
@@ -63,19 +63,19 @@ export const product = {
   ],
   features: [
     {
-      title: "Live tactical map",
-      description:
-        "Every vessel colored by threat. Lock your area, draw a corridor, or search any ship by name, MMSI, or IMO.",
-    },
-    {
       title: "Sourced OSINT reports",
       description:
         "Who owns it, where it's been, what it can do, whether it's sanctioned — every field cited to its source.",
     },
     {
-      title: "Spoofing signals",
+      title: "Anomaly & spoofing detection",
       description:
-        "Catch identity games: broadcast-vs-registry mismatches are flagged inline, right in the vessel's report.",
+        "Catch identity games: when a ship's broadcast doesn't match its registry record, you see it immediately.",
+    },
+    {
+      title: "Threat scoring",
+      description:
+        "Every analyzed vessel gets a 0–100 score and a HIGH / MEDIUM / LOW level — so the board ranks itself.",
     },
     {
       title: "Command brief",
@@ -100,7 +100,7 @@ export const platform = {
   eyebrow: "Platform",
   heading: "The AI engine",
   body: "Behind the console is our own analysis engine: a coordinated team of AI agents that search open sources, cross-check registries, and write the reports. It's built on the knowledge of people who spent their careers at sea and in intelligence — and it's designed to power more tools than one.",
-  technologies: ["AI agent pipeline", "Live AIS feed", "Open-web research", "Analyst in the loop"],
+  technologies: ["AI agent pipeline", "Open-web research", "Live AIS feed", "Analyst in the loop"],
 };
 
 export type RoleType = "founder" | "engineer" | "advisor";

@@ -1,14 +1,15 @@
-import { Map, FileSearch, Fingerprint, FileText, ShieldCheck, ArrowRight } from "lucide-react";
+import { FileSearch, Fingerprint, Gauge, FileText, ShieldCheck, ArrowRight } from "lucide-react";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 import { product, site } from "../data/content";
 // To update the product screenshot: overwrite this file (keep the same name)
 // and update SCREENSHOT_SIZE below to the new image's pixel dimensions.
-import tripScreenshot from "../assets/screenshots/osint-agent.webp";
+import consoleScreenshot from "../assets/screenshots/osint-agent.webp";
 
 const SCREENSHOT_SIZE = { width: 1843, height: 924 };
 
-const featureIcons = [Map, FileSearch, Fingerprint, FileText];
+// Order matches product.features in content.ts.
+const featureIcons = [FileSearch, Fingerprint, Gauge, FileText];
 
 /** Mock of the in-app OSINT Verdict card — mirrors the vessel visible in the
  *  screenshot and brings the product's threat-color language onto the page. */
@@ -76,7 +77,7 @@ export default function Console() {
                 </span>
               </div>
               <img
-                src={tripScreenshot}
+                src={consoleScreenshot}
                 alt={product.screenshotAlt}
                 width={SCREENSHOT_SIZE.width}
                 height={SCREENSHOT_SIZE.height}
