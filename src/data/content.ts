@@ -12,13 +12,13 @@ export const site = {
 };
 
 export const hero = {
-  badge: "Maritime intelligence",
+  badge: "Baltic maritime intelligence",
   headline: "See the",
   headlineHighlight: "unseen",
-  description:
-    "We detect hidden threats before they strike. Maritime intelligence for the Baltic — live vessel tracking, automated OSINT, and threat assessment in one console.",
+  description: "We detect hidden threats before they strike.",
   ctaPrimary: "See how it works",
   ctaSecondary: "Get in touch",
+  capabilities: ["Live vessel tracking", "Automated OSINT", "Threat assessment"],
 };
 
 export const mission = {

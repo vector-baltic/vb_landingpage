@@ -62,7 +62,7 @@ export default function Hero() {
 
         <motion.p
           {...fadeUp(0.3)}
-          className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground md:text-2xl"
+          className="mx-auto mt-6 max-w-2xl text-xl text-muted-foreground md:text-2xl"
         >
           {hero.description}
         </motion.p>
@@ -82,6 +82,18 @@ export default function Hero() {
             {hero.ctaSecondary}
           </a>
         </motion.div>
+
+        <motion.ul
+          {...fadeUp(0.6)}
+          className="mt-14 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground/80"
+        >
+          {hero.capabilities.map((capability, i) => (
+            <li key={capability} className="flex items-center gap-3">
+              {i > 0 && <span aria-hidden className="h-1 w-1 rounded-full bg-primary/60" />}
+              {capability}
+            </li>
+          ))}
+        </motion.ul>
       </div>
 
       <a
