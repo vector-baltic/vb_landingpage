@@ -142,7 +142,7 @@ export const team = {
     },
     {
       name: "Michał Lejwoda",
-      role: "CoFounder",
+      role: "CoFounder / CEO",
       roleType: "founder" as RoleType,
       description: "Robotics & embedded systems | autonomous drones",
       image: michal,
