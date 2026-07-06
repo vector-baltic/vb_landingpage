@@ -12,66 +12,95 @@ export const site = {
 };
 
 export const hero = {
-  badge: "Blue security",
+  badge: "Maritime intelligence",
   headline: "See the",
   headlineHighlight: "unseen",
   description:
-    "We detect hidden threats before they strike. AI-driven solutions for blue security — protecting critical infrastructure at sea and on shore.",
-  ctaPrimary: "Explore solutions",
+    "We detect hidden threats before they strike. AI-driven maritime intelligence for the Baltic — live vessel tracking, automated OSINT, and threat assessment in one console.",
+  ctaPrimary: "See how it works",
   ctaSecondary: "Get in touch",
 };
 
 export const mission = {
-  heading: "Threat intelligence at inhuman speed",
-  body: "We analyze hundreds of thousands of data points, events, and signals at inhuman speeds, giving Critical Infrastructure operators threat intelligence and response time.",
+  heading: "The Baltic has a visibility problem",
+  body: "Shadow-fleet tankers, spoofed identities, dual-use vessels loitering near cables and pipelines. AIS shows where a ship is — not who it really is. We compress hours of manual vessel investigation into a sourced intelligence dossier and threat score, in 30–90 seconds.",
   sectors: ["Wind farms", "Ports", "Pipelines", "Subsea cables"],
 };
 
 export const solutions = {
   eyebrow: "Solutions",
-  heading: "What we do",
-  subheading: "Four capabilities, one goal: giving operators the time and clarity to act.",
+  heading: "Track. Analyze. Decide.",
+  subheading: "From raw traffic to a ranked threat picture — in one console.",
   items: [
     {
-      title: "Real-time anomaly detection",
+      title: "Track",
       description:
-        "Continuous analysis of live data streams to surface anomalies the moment they emerge.",
+        "Live AIS across the Baltic on a tactical map — every vessel colored by threat, scoped to your area or a route corridor.",
     },
     {
-      title: "Situational awareness",
+      title: "Analyze",
       description:
-        "Enhance situational awareness around Critical Infrastructure with a unified operational picture.",
+        "One click compiles a sourced dossier: identity, ownership, history, capabilities, sanctions — and a 0–100 threat score.",
     },
     {
-      title: "Response recommendations",
+      title: "Decide",
       description:
-        "Actionable security alerts with recommended responses, so operators act fast and with confidence.",
-    },
-    {
-      title: "Vulnerability testing",
-      description:
-        "Testing Critical Infrastructure vulnerability to physical and cyber threats before adversaries do.",
+        "A ranked threat board and an AI-written command brief: posture, key threats, hidden patterns, and what to do next.",
     },
   ],
+};
+
+// The flagship product showcase.
+export const trip = {
+  eyebrow: "The Console",
+  heading: "TRIP",
+  tagline:
+    "A tactical picture of the Baltic — live AIS tracking, OSINT vessel analysis and threat assessment in one operator workstation.",
+  stats: [
+    { value: "30–90 s", label: "from AIS blip to intelligence dossier" },
+    { value: "0–100", label: "threat score on every analyzed vessel" },
+    { value: "10", label: "sections per structured report" },
+  ],
+  features: [
+    {
+      title: "Live tactical map",
+      description:
+        "Every vessel colored by threat. Lock your area, draw a corridor, or search any ship by name, MMSI, or IMO.",
+    },
+    {
+      title: "Sourced OSINT dossiers",
+      description:
+        "Who owns it, where it's been, what it can do, whether it's sanctioned — every field cited to its source.",
+    },
+    {
+      title: "Spoofing signals",
+      description:
+        "Catch identity games: broadcast-vs-registry mismatches are flagged inline, right in the dossier.",
+    },
+    {
+      title: "Command brief",
+      description:
+        "One AI-compiled situation report per area: posture, key threats, cross-vessel patterns — exportable to PDF.",
+    },
+  ],
+  trustLine:
+    "Every finding is sourced, every brief is auditable, and every AI output is verified by the operator. Decision support — not a black box.",
+  cta: "Book a walkthrough",
+  screenshotAlt:
+    "TRIP console — live Baltic vessel map with threat centre and OSINT verdict panel",
+  // Mirrors the vessel shown in the screenshot.
+  verdict: {
+    score: 22,
+    level: "LOW",
+    rows: ["AIS anomalies — none detected", "Sanctions — no indication"],
+  },
 };
 
 export const platform = {
   eyebrow: "Platform",
   heading: "The Vector Baltic AI engine",
   body: "Our AI engine is the foundation for building multi-agent solutions that enable autonomous handling of processes requiring creative approaches in critical infrastructure protection. It operates on the domain expertise of our advisors combined with technologies that enable agent self-learning and autonomous operation.",
-  technologies: ["Knowledge graphs", "Neural networks", "LLMs", "Multi-agent systems"],
-};
-
-// The single featured product. If a second agent ships, turn this into a
-// list and render it with a map — the component consumes exactly this shape.
-export const agent = {
-  eyebrow: "AI Agents",
-  heading: "AI Agents+",
-  intro: "Our platform features the OSINT Agent+ tool for civil and military use.",
-  name: "OSINT Agent+",
-  description:
-    "Operates like an intelligence officer, gathering information from targeted sources.",
-  screenshotAlt: "OSINT Agent+ live vessel map with threat centre and OSINT verdict",
+  technologies: ["Multi-agent pipeline", "Web-scale OSINT", "Retrieval (RAG)", "Analyst-in-the-loop"],
 };
 
 export type RoleType = "founder" | "engineer" | "advisor";
@@ -128,6 +157,6 @@ export const team = {
 
 export const contact = {
   heading: "Let's dock together!",
-  body: "Ready to secure your critical infrastructure? Get in touch with us today.",
-  cta: "Contact us",
+  body: "Ready to see TRIP on your waters? Get in touch for a walkthrough.",
+  cta: "Book a walkthrough",
 };

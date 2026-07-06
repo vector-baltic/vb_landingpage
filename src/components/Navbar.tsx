@@ -4,8 +4,8 @@ import logo from "../assets/logo-white.png";
 
 const links = [
   { label: "Solutions", href: "#solutions" },
+  { label: "TRIP", href: "#trip" },
   { label: "Platform", href: "#platform" },
-  { label: "AI Agents", href: "#agents" },
   { label: "Team", href: "#team" },
 ];
 

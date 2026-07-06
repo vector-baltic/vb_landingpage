@@ -1,9 +1,9 @@
-import { Activity, Eye, ShieldAlert, Bug } from "lucide-react";
+import { Radar, ScanSearch, ListChecks } from "lucide-react";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 import { solutions } from "../data/content";
 
-const icons = [Activity, Eye, ShieldAlert, Bug];
+const icons = [Radar, ScanSearch, ListChecks];
 
 export default function Solutions() {
   return (
@@ -18,9 +18,9 @@ export default function Solutions() {
           />
         </Reveal>
 
-        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3">
           {solutions.items.map((solution, i) => {
-            // Modulo keeps a content.ts edit (5th item) from indexing past
+            // Modulo keeps a content.ts edit (4th item) from indexing past
             // the icon list and white-screening the page.
             const Icon = icons[i % icons.length];
             return (
@@ -30,7 +30,7 @@ export default function Solutions() {
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <Icon className="mb-6 h-12 w-12 text-primary transition-transform duration-300 group-hover:scale-110" />
-                  <h3 className="mb-3 font-display text-xl font-semibold">{solution.title}</h3>
+                  <h3 className="mb-3 font-display text-2xl font-semibold">{solution.title}</h3>
                   <p className="text-sm leading-relaxed text-muted-foreground">
                     {solution.description}
                   </p>

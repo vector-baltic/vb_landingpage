@@ -2,8 +2,8 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Mission from "./components/Mission";
 import Solutions from "./components/Solutions";
+import Trip from "./components/Trip";
 import Platform from "./components/Platform";
-import Agents from "./components/Agents";
 import Team from "./components/Team";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -16,8 +16,8 @@ export default function App() {
         <Hero />
         <Mission />
         <Solutions />
+        <Trip />
         <Platform />
-        <Agents />
         <Team />
         <Contact />
       </main>
