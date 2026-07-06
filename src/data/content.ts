@@ -22,8 +22,8 @@ export const hero = {
 };
 
 export const mission = {
-  heading: "The Baltic has a visibility problem",
-  body: "Shadow-fleet tankers, spoofed identities, dual-use vessels loitering near cables and pipelines. AIS shows where a ship is — not who it really is. We compress hours of manual vessel investigation into a sourced intelligence report and threat score, in 30–90 seconds.",
+  heading: "Threat intelligence at inhuman speed",
+  body: "We turn raw Baltic traffic into a ranked threat picture — every vessel investigated, scored, and briefed in 30–90 seconds instead of hours. AIS tells you where a ship is; we tell you who it really is: owners, history, capabilities, sanctions.",
   sectors: ["Wind farms", "Ports", "Pipelines", "Subsea cables"],
 };
 
