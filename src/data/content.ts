@@ -103,8 +103,13 @@ export const product = {
 export const platform = {
   eyebrow: "Platform",
   heading: "The AI engine",
-  body: "Behind the console is our own analysis engine: a coordinated team of AI agents that search open sources, cross-check registries, and write the reports. It's built on the knowledge of people who spent their careers at sea and in intelligence — and it's designed to power more tools than one.",
-  technologies: ["AI agent pipeline", "Open-web research", "Live AIS feed", "Analyst in the loop"],
+  body: "Behind the console is our own analysis engine: a coordinated team of AI agents that search open sources, cross-check registries, and write the reports — working alongside AI models that flag anomalies in vessel identity and behaviour. It's built on the knowledge of people who spent their careers at sea and in intelligence, and designed to power more tools than one.",
+  technologies: [
+    "AI agent pipeline",
+    "Anomaly detection models",
+    "Open-web research",
+    "Analyst in the loop",
+  ],
 };
 
 export type RoleType = "founder" | "engineer" | "advisor";
