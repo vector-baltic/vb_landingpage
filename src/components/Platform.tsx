@@ -27,21 +27,6 @@ export default function Platform() {
           </div>
         </Reveal>
 
-        <Reveal delay={0.2} className="mx-auto mt-14 max-w-4xl">
-          <div className="relative aspect-video overflow-hidden rounded-2xl border-2 border-primary/30 bg-card transition-all duration-300 hover:border-primary hover:shadow-cyan-strong">
-            <video
-              className="h-full w-full object-cover"
-              src="./vectorb-demo.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
-              controls
-            >
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </Reveal>
       </div>
     </section>
   );

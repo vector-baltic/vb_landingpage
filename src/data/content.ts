@@ -49,19 +49,14 @@ export const platform = {
 };
 
 export const agents = {
-  intro: "Our platform currently features two AI Agents+ tools for civil and military use.",
+  intro: "Our platform features the OSINT Agent+ tool for civil and military use.",
   items: [
     {
       name: "OSINT Agent+",
       description:
         "Operates like an intelligence officer, gathering information from targeted sources.",
-      screenshotAlt: "OSINT Agent+ analysis results",
-    },
-    {
-      name: "Cyber Agent+",
-      description:
-        "Trained like a penetration tester to detect security gaps and vulnerabilities.",
-      screenshotAlt: "Cyber Agent+ technical findings",
+      screenshotAlt:
+        "OSINT Agent+ live vessel map with threat centre and OSINT verdict",
     },
   ],
 };

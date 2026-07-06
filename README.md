@@ -16,8 +16,7 @@ npm run preview   # serve the production build locally
 ## Editing content
 
 - **All copy** (headlines, solutions, team, contact) lives in [src/data/content.ts](src/data/content.ts).
-- **Product screenshots**: overwrite `src/assets/screenshots/osint-agent.png` and `src/assets/screenshots/cyber-agent.png` (keep the same filenames).
-- **Demo video**: replace `public/vectorb-demo.mp4`.
+- **Product screenshot**: overwrite `src/assets/screenshots/osint-agent.webp` (or drop in a PNG and update the import at the top of `src/components/Agents.tsx`).
 - **Team photos**: `src/assets/team/`.
 
 ## Deployment
