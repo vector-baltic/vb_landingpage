@@ -16,7 +16,7 @@ export const hero = {
   headline: "See the",
   headlineHighlight: "unseen",
   description:
-    "We detect hidden threats before they strike. AI-driven maritime intelligence for the Baltic — live vessel tracking, automated OSINT, and threat assessment in one console.",
+    "We detect hidden threats before they strike. Maritime intelligence for the Baltic — live vessel tracking, automated OSINT, and threat assessment in one console.",
   ctaPrimary: "See how it works",
   ctaSecondary: "Get in touch",
 };
@@ -35,7 +35,7 @@ export const solutions = {
     {
       title: "Track",
       description:
-        "Live AIS across the Baltic on a tactical map — every vessel colored by threat, scoped to your area or a route corridor.",
+        "Live AIS across the Baltic on a tactical map — every vessel colored by threat, watching your whole area or a single route corridor.",
     },
     {
       title: "Analyze",
@@ -45,7 +45,7 @@ export const solutions = {
     {
       title: "Decide",
       description:
-        "A ranked threat board and an AI-written command brief: posture, key threats, hidden patterns, and what to do next.",
+        "A ranked threat board and a command brief that tell you what matters first — and what to do next.",
     },
   ],
 };
@@ -80,11 +80,11 @@ export const trip = {
     {
       title: "Command brief",
       description:
-        "One AI-compiled situation report per area: posture, key threats, cross-vessel patterns — exportable to PDF.",
+        "One situation report for the whole area: the overall picture, key threats, patterns across vessels — exportable to PDF.",
     },
   ],
   trustLine:
-    "Every finding is sourced, every brief is auditable, and every AI output is verified by the operator. Decision support — not a black box.",
+    "Every finding is sourced, every brief can be audited, and the analyst always has the final word. Decision support — not a black box.",
   cta: "Book a walkthrough",
   screenshotAlt:
     "TRIP console — live Baltic vessel map with threat centre and OSINT verdict panel",
@@ -98,9 +98,9 @@ export const trip = {
 
 export const platform = {
   eyebrow: "Platform",
-  heading: "The Vector Baltic AI engine",
-  body: "Our AI engine is the foundation for building multi-agent solutions that enable autonomous handling of processes requiring creative approaches in critical infrastructure protection. It operates on the domain expertise of our advisors combined with technologies that enable agent self-learning and autonomous operation.",
-  technologies: ["Multi-agent pipeline", "Web-scale OSINT", "Retrieval (RAG)", "Analyst-in-the-loop"],
+  heading: "The engine behind TRIP",
+  body: "TRIP runs on our own analysis engine: a coordinated team of AI agents that search open sources, cross-check registries, and write the reports. It's built on the knowledge of people who spent their careers at sea and in intelligence — and it's designed to power more tools than one.",
+  technologies: ["AI agent pipeline", "Live AIS feed", "Open-web research", "Analyst in the loop"],
 };
 
 export type RoleType = "founder" | "engineer" | "advisor";
