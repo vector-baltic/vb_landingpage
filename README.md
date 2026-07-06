@@ -16,7 +16,7 @@ npm run preview   # serve the production build locally
 ## Editing content
 
 - **All copy** (headlines, solutions, team, contact) lives in [src/data/content.ts](src/data/content.ts).
-- **Product screenshot**: overwrite `src/assets/screenshots/osint-agent.webp` (or drop in a PNG and update the import in `src/components/Agents.tsx`), then update `SCREENSHOT_SIZE` in that component to the new image's pixel dimensions.
+- **Product screenshot**: overwrite `src/assets/screenshots/osint-agent.webp` (or drop in a PNG and update the import in `src/components/Console.tsx`), then update `SCREENSHOT_SIZE` in that component to the new image's pixel dimensions.
 - **Team photos**: `src/assets/team/` (shipped at 256×256 — crop new photos square).
 - **Social share image**: `public/og-image.jpg` (1200×630).
 

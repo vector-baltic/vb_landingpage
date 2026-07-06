@@ -50,12 +50,12 @@ export const solutions = {
   ],
 };
 
-// The flagship product showcase.
-export const trip = {
+// The flagship product showcase (kept name-neutral — the product name may change).
+export const product = {
   eyebrow: "The Console",
-  heading: "TRIP",
+  heading: "A tactical picture of the Baltic",
   tagline:
-    "A tactical picture of the Baltic — live AIS tracking, OSINT vessel analysis and threat assessment in one operator workstation.",
+    "Live AIS tracking, OSINT vessel analysis and threat assessment — in one operator workstation.",
   stats: [
     { value: "30–90 s", label: "from AIS blip to full vessel report" },
     { value: "0–100", label: "threat score on every analyzed vessel" },
@@ -87,7 +87,7 @@ export const trip = {
     "Every finding is sourced, every brief can be audited, and the analyst always has the final word. Decision support — not a black box.",
   cta: "Book a walkthrough",
   screenshotAlt:
-    "TRIP console — live Baltic vessel map with threat centre and OSINT verdict panel",
+    "Operator console — live Baltic vessel map with threat centre and OSINT verdict panel",
   // Mirrors the vessel shown in the screenshot.
   verdict: {
     score: 22,
@@ -98,8 +98,8 @@ export const trip = {
 
 export const platform = {
   eyebrow: "Platform",
-  heading: "The engine behind TRIP",
-  body: "TRIP runs on our own analysis engine: a coordinated team of AI agents that search open sources, cross-check registries, and write the reports. It's built on the knowledge of people who spent their careers at sea and in intelligence — and it's designed to power more tools than one.",
+  heading: "The AI engine",
+  body: "Behind the console is our own analysis engine: a coordinated team of AI agents that search open sources, cross-check registries, and write the reports. It's built on the knowledge of people who spent their careers at sea and in intelligence — and it's designed to power more tools than one.",
   technologies: ["AI agent pipeline", "Live AIS feed", "Open-web research", "Analyst in the loop"],
 };
 
@@ -157,6 +157,6 @@ export const team = {
 
 export const contact = {
   heading: "Let's dock together!",
-  body: "Ready to see TRIP on your waters? Get in touch for a walkthrough.",
+  body: "Ready to see it on your waters? Get in touch for a walkthrough.",
   cta: "Book a walkthrough",
 };

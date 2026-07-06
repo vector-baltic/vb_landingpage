@@ -69,7 +69,7 @@ export default function Hero() {
 
         <motion.div {...fadeUp(0.45)} className="mt-10 flex flex-wrap items-center justify-center gap-4">
           <a
-            href="#trip"
+            href="#console"
             className="group inline-flex items-center gap-2 rounded-md bg-primary px-8 py-3.5 font-medium text-primary-foreground shadow-cyan transition-all hover:shadow-cyan-strong"
           >
             {hero.ctaPrimary}

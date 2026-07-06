@@ -1,7 +1,7 @@
 import { Map, FileSearch, Fingerprint, FileText, ShieldCheck, ArrowRight } from "lucide-react";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
-import { trip, site } from "../data/content";
+import { product, site } from "../data/content";
 // To update the product screenshot: overwrite this file (keep the same name)
 // and update SCREENSHOT_SIZE below to the new image's pixel dimensions.
 import tripScreenshot from "../assets/screenshots/osint-agent.webp";
@@ -23,14 +23,14 @@ function VerdictCard() {
       </p>
       <div className="mt-2 flex items-baseline gap-3">
         <span className="font-display text-4xl font-bold text-emerald-400">
-          {trip.verdict.score}
+          {product.verdict.score}
         </span>
         <span className="rounded-full border border-emerald-400/40 bg-emerald-400/10 px-2.5 py-0.5 text-xs font-semibold text-emerald-400">
-          {trip.verdict.level}
+          {product.verdict.level}
         </span>
       </div>
       <div className="mt-3 space-y-1.5">
-        {trip.verdict.rows.map((row) => (
+        {product.verdict.rows.map((row) => (
           <p key={row} className="flex items-center gap-2 text-xs text-muted-foreground">
             <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
             {row}
@@ -41,19 +41,19 @@ function VerdictCard() {
   );
 }
 
-export default function Trip() {
+export default function Console() {
   return (
-    <section id="trip" className="relative py-24">
+    <section id="console" className="relative py-24">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-card/40 to-background" />
       <div className="container relative">
         <Reveal>
-          <SectionHeading eyebrow={trip.eyebrow} title={trip.heading} subtitle={trip.tagline} />
+          <SectionHeading eyebrow={product.eyebrow} title={product.heading} subtitle={product.tagline} />
         </Reveal>
 
         {/* Stats row */}
         <Reveal delay={0.1}>
           <dl className="mx-auto mb-14 grid max-w-3xl grid-cols-1 gap-8 text-center sm:grid-cols-3">
-            {trip.stats.map((stat) => (
+            {product.stats.map((stat) => (
               <div key={stat.label}>
                 <dt className="sr-only">{stat.label}</dt>
                 <dd className="font-display text-4xl font-bold text-primary">{stat.value}</dd>
@@ -72,12 +72,12 @@ export default function Trip() {
                 <span className="h-2.5 w-2.5 rounded-full bg-muted-foreground/30" />
                 <span className="h-2.5 w-2.5 rounded-full bg-primary/60" />
                 <span className="ml-3 font-mono text-[10px] uppercase tracking-widest text-muted-foreground/60">
-                  TRIP · Tactical maritime intelligence
+                  Operator console · Baltic
                 </span>
               </div>
               <img
                 src={tripScreenshot}
-                alt={trip.screenshotAlt}
+                alt={product.screenshotAlt}
                 width={SCREENSHOT_SIZE.width}
                 height={SCREENSHOT_SIZE.height}
                 loading="lazy"
@@ -90,7 +90,7 @@ export default function Trip() {
 
         {/* Feature grid */}
         <div className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2">
-          {trip.features.map((feature, i) => {
+          {product.features.map((feature, i) => {
             const Icon = featureIcons[i % featureIcons.length];
             return (
               <Reveal key={feature.title} delay={(i % 2) * 0.1}>
@@ -112,13 +112,13 @@ export default function Trip() {
         <Reveal delay={0.1} className="mx-auto mt-14 max-w-3xl text-center">
           <p className="mx-auto flex max-w-2xl items-start justify-center gap-3 text-left text-sm leading-relaxed text-muted-foreground">
             <ShieldCheck className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-            <span>{trip.trustLine}</span>
+            <span>{product.trustLine}</span>
           </p>
           <a
-            href={`mailto:${site.email}?subject=TRIP%20walkthrough`}
+            href={`mailto:${site.email}?subject=Walkthrough%20request`}
             className="group mt-8 inline-flex items-center gap-2 rounded-md bg-primary px-8 py-3.5 font-medium text-primary-foreground shadow-cyan transition-all hover:shadow-cyan-strong"
           >
-            {trip.cta}
+            {product.cta}
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </a>
         </Reveal>

@@ -4,7 +4,7 @@ import logo from "../assets/logo-white.png";
 
 const links = [
   { label: "Solutions", href: "#solutions" },
-  { label: "TRIP", href: "#trip" },
+  { label: "Console", href: "#console" },
   { label: "Platform", href: "#platform" },
   { label: "Team", href: "#team" },
 ];
