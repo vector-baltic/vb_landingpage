@@ -18,7 +18,11 @@ export const hero = {
   description: "We detect hidden threats before they strike.",
   ctaPrimary: "See how it works",
   ctaSecondary: "Get in touch",
-  capabilities: ["Automated OSINT analysis", "Anomaly & spoofing detection", "Threat scoring"],
+  capabilities: [
+    "Open-source intelligence (OSINT)",
+    "Anomaly & spoofing detection",
+    "Threat scoring",
+  ],
 };
 
 export const mission = {
